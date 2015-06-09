@@ -1,0 +1,20 @@
+<head>
+  <title>meteor-loggingIn</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  <h2>
+    {{#if loggingIn}}
+      Logging In
+    {{else}}
+      {{#if currentUser}}
+        Logged In
+      {{else}}
+        Logged Out
+      {{/if}}
+    {{/if}}
+  </h2>
+
+  {{> loginButtons}}
+</body>
